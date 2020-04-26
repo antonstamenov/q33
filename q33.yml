@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Upgrade package python27
+      pkgng:
+        name: python27
+        state: latest
+      become: yes
